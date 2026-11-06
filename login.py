@@ -6,5 +6,6 @@ root = Tk()
 frm = ttk.Frame(root, padding=10)
 frm.grid()
 ttk.Label(frm, text="hello world").grid(column=0, row=0)
+ttk.Button(frm, text="Quit", command=root.destroy).grid(column=0, row=3)
 
 root.mainloop()
