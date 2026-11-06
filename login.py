@@ -1,4 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 
-raiz = Tk()
+root = Tk()
+
+# frm = ttk.Frame(root, padding=10)
+root.mainloop()
