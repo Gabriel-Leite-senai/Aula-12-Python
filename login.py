@@ -1,11 +1,16 @@
 from tkinter import *
 from tkinter import ttk
+import tkinter
 
 root = Tk()
+root.title("Scout TF2")
 
-frm = ttk.Frame(root, padding=10)
-frm.grid()
-ttk.Label(frm, text="hello world").grid(column=0, row=0)
-ttk.Button(frm, text="Quit",width=200, padding=20, command=root.destroy).grid(column=0, row=3)
+frame_pricipal = ttk.Frame(root, padding=(3, 3, 12, 12))
+frame_pricipal.grid(column=0, row=0, sticky=(N, W, E, S))
+
+email = StringVar()
+email_entrada = ttk.Entry(frame_pricipal, width=7, textvariable=email, background="red")
+email_entrada.grid(column=1, row=1)
+
 
 root.mainloop()
